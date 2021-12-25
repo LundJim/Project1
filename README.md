@@ -33,20 +33,21 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.1   | Linux            |
+| Jump Box | Gateway  | 10.0.0.4   | Linux            |
 | ElkServer| Kibana   | 10.1.0.4   | Linux            |
-| Web1     | DVWA     | 10.0.0.5   | Linux            |
+| Web1     | DVWA     | 10.0.0.7   | Linux            |
 | Web2     | DVWA     | 10.0.0.6   | Linux            |
-
+| Web3     | DVWA     | 10.0.0.8   | Linux            |
+ 
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the host machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses_Jumpbox 20.124.193.196 ELK Virtual Machine 
+- Add whitelisted IP addresses_Jumpbox 10.0.0.4, Web 1 10.0.0.7, Web 2 10.0.0.6, Web 3 10.0.0.8, ELK Virtual Machine 10.1.0.4 
 
 Machines within the network can only be accessed by _____.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+- Which machine did you allow to access your ELK VM? Jumpbox What was its IP address? Private 
 
 A summary of the access policies in place can be found in the table below.
 
