@@ -9,7 +9,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
   - [Ansible Playbook](https://github.com/LundJim/Project1/tree/main/Ansible)
 
 This document contains the following details:
-- Description of the Topologu
+- Description of the Topology
 - Access Policies
 - ELK Configuration
   - Beats in Use
@@ -46,34 +46,37 @@ The machines on the internal network are not exposed to the public Internet.
 Only the host machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 - Add whitelisted IP addresses_Jumpbox 10.0.0.4, Web 1 10.0.0.7, Web 2 10.0.0.6, Web 3 10.0.0.8, ELK Virtual Machine 10.1.0.4 
 
-Machines within the network can only be accessed by _____.
+Machines within the network can only be accessed by Docker Container.
 - Which machine did you allow to access your ELK VM? Jumpbox What was its IP address? Private 
 
 A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
+| Jump Box | No                  | 10.0.0.1 10.0.0.2    |
+| Load Bal.|                     |                      |
 |          |                     |                      |
 
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_
+- _TODO: What is the main advantage of automating configuration with Ansible? Allows different systems to communicate through configuration
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
+-  In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
+-  Use apt module to install docker.io, 
+-  use apt module to install pip3,
+-  use pip module to install docker python module,
+-  use system control module to use more memory
+-  use docker_container module to download and launch a docker elk container and use systemd module to enable service on the boot.
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
 ![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
 
 ### Target Machines & Beats
-This ELK server is configured to monitor the following machines:
-- _TODO: List the IP addresses of the machines you are monitoring_
+This ELK server is configured to monitor the following machines: Jumpboxclass and ELKM
+- _TODO: List the IP addresses of the machines you are monitoring_ 10.1.0.0.4 and 40.122.108.197
 
 We have installed the following Beats on these machines:
 - _TODO: Specify which Beats you successfully installed_
