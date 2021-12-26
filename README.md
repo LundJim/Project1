@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![Project1Elkdiagram](LINK TO DIAGRAM HERE)
+[](https://app.diagrams.net/#G1dAYz9wYUs4Qm8damfEj6nBxtwg3FkU3d)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -55,8 +55,8 @@ A summary of the access policies in place can be found in the table below.
 |----------|---------------------|----------------------|
 | Jump Box | No                  | 10.0.0.1 10.0.0.2    |
 | ELK|     | No                  | 10.1.0.4 10.0.0.191  |
-| Firewall | No                  |                      |
-| LB       | No                  | 20.121.195.182                     | 
+| Firewall | No                  | No IP Address        |
+| LB       | No                  | 20.121.195.182       |              | 
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
