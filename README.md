@@ -53,9 +53,9 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | No                  | 10.0.0.1 10.0.0.2    |
-| ELK|     | No                  | 10.1.0.4 10.0.0.191  |
-| Firewall | No                  | IP Address NONE      |
+| Jump Box | Yes                 | 10.0.0.4             |
+| ELK      | No                  | 10.1.0.4             |
+| Firewall | No                  | None                 |
 | LB       | No                  | 20.121.195.182       |   
 ### Elk Configuration
 
@@ -84,19 +84,19 @@ We have installed the following Beats on these machines:
 
 These Beats allow us to collect the following information from each machine:
 - In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
-Filebeat reviews log files and events and I would expect to see it get sent to Elasticsearch or Logstash for additional analysis. Metricbeat watches servers and collects metrics and I would expect to see it send it sned information to Logstash for additional review.
+Filebeat reviews log files and events and I would expect to see it get sent to Elasticsearch or Logstash for additional analysis. Metricbeat watches servers and collects metrics and I would expect to see it send information to Logstash for additional review.
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the yml file to ansible.
-- Update the ansible file to include playbook.
-- Run the playbook, and navigate to to check that the installation worked as expected.
+- Copy the host file to environment.
+- Update the host file to include the correct group and ip addresses.
+- Ran the playbook, and navigate to Kibana to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it? 
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running? http://23.100.87.169:5601/app/kibana#/home
+Answer the following questions to fill in the blanks:1
+- Which file is the playbook? Where do you copy it? The ELK playbook and you copy it in GitBash.
+- Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on? docker, Elkstack.
+- Which URL do you navigate to in order to check that the ELK server is running? http://23.100.87.169:5601/app/kibana#/home
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
