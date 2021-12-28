@@ -101,6 +101,4 @@ Answer the following questions to fill in the blanks:1
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
 
-### bashscripts
-![Financial Loss Analysis](https://github.com/LundJim/Project1/tree/main/Financial%20Losses%20Unit%203) 
 ---
