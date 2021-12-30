@@ -101,4 +101,10 @@ Answer the following questions to fill in the blanks:1
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
 
+Resources used:
+Trilogy Education Services, a 2U, Inc. Brand
+elastic.co
+digitalocean.com
+
+
 ---
