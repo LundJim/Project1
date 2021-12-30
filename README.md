@@ -2,9 +2,9 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![Diagram](https://raw.githubusercontent.com/LundJim/Project1/main/Diagrams/Print%20of%20Configuration%2012-19-21.drawio%20-%20diagrams.net.PNG)
+![Diagram](https://raw.githubusercontent.com/LundJim/Project1/main/Diagrams/Diagram%20Updated%20December.PNG)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the Elk Stack file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
 
   - [Ansible Playbook](https://github.com/LundJim/Project1/tree/main/Ansible)
 
@@ -56,7 +56,7 @@ A summary of the access policies in place can be found in the table below.
 | Jump Box | Yes                 | 10.0.0.4             |
 | ELK      | No                  | 10.1.0.4             |
 | Firewall | No                  | None                 |
-| LB       | No                  | 20.121.195.182       |   
+| LB       | Yes                 | 20.121.195.182       |   
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
@@ -95,9 +95,9 @@ SSH into the control node and follow the steps below:
 - Ran the playbook, and navigate to Kibana to check that the installation worked as expected.
 
 Answer the following questions to fill in the blanks:1
-- Which file is the playbook? Where do you copy it? The ELK playbook and you copy it in GitBash.
+- Which file is the playbook? Where do you copy it? The yml file in the Host file.
 - Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on? docker, Elkstack.
-- Which URL do you navigate to in order to check that the ELK server is running? http://23.100.87.169:5601/app/kibana#/home
+- Which URL do you navigate to in order to check that the ELK server is running? http://23.100.87.169:5601/app/kibana
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
 
